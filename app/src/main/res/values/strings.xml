@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Android-Utilities</string>
+
+    <string name="adapter">Adapter</string>
+    <string name="clean">Clean</string>
+    <string name="load">Load</string>
+    <string name="paged_adapter">Paged Adapter</string>
+    <string name="recycler">Recycler</string>
+</resources>
