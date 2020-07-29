@@ -11,8 +11,8 @@ ext {
     artifact = 'recycler'
 
     gitUrl = 'https://github.com/diogo0liveira'
-    projectUrl = 'https://github.com/diogo0liveira/Laboratory'
-    issuesUrl = 'https://github.com/diogo0liveira/Laboratory/issues'
+    projectUrl = 'https://github.com/diogo0liveira/android-utilities'
+    issuesUrl = 'https://github.com/diogo0liveira/android-utilities/issues'
 
     developerId = 'diogo0liveira'
     developerName = 'Diogo Oliveira'

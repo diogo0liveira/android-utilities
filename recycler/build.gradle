@@ -3,10 +3,6 @@ plugins {
     id 'kotlin-android'
 }
 
-apply {
-    from '../bintray.gradle'
-}
-
 android {
     compileSdkVersion builder.compileSdk
     buildToolsVersion builder.buildTools
@@ -49,3 +45,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+
+apply from: '../bintray.gradle'
