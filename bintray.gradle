@@ -44,6 +44,7 @@ publishing {
                 name = bintrayName
                 description = bintrayDescription
                 url = projectUrl
+                packaging 'aar'
 
                 licenses {
                     license {
