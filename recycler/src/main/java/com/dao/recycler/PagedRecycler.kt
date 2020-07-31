@@ -5,7 +5,7 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 
-abstract class PagedRecycler {
+class PagedRecycler {
     abstract class Adapter<T : Any, V : RecyclerView.ViewHolder>
     constructor(comparator: DiffUtil.ItemCallback<T>) :
         PagingDataAdapter<T, V>(comparator), AdapterBindView<T?, V> {

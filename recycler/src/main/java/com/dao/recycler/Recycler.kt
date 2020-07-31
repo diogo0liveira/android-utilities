@@ -3,7 +3,7 @@ package com.dao.recycler
 import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
 
-abstract class Recycler {
+class Recycler {
     abstract class Adapter<T, V : RecyclerView.ViewHolder> :
         RecyclerView.Adapter<V>(), AdapterBindView<T, V> {
 

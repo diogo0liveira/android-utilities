@@ -4,6 +4,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
@@ -32,6 +34,12 @@ internal interface AdapterBindView<T, V> : LifecycleObserver {
     fun inflate(parent: ViewGroup, @LayoutRes layout: Int): View {
         return LayoutInflater.from(parent.context)
             .inflate(layout, parent, false)
+    }
+
+    fun <H : ViewDataBinding> inflate(parent: ViewGroup, @LayoutRes layout: Int): H {
+        return DataBindingUtil.inflate(
+            LayoutInflater.from(parent.context), layout, parent, false
+        )
     }
 
     fun setOnAdapterDataChangedListener(listener: OnAdapterDataChangedListener) {
